@@ -1,0 +1,82 @@
+/* Painel, consulta e cardápio · Sesi — mesma identidade vermelha da TV. */
+:root{--verm:#E30613;--vermesc:#b3000f;--rosa:#fde3e5;--preto:#171717;--cinza:#F2F2F2}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cinza);color:var(--preto)}
+a{color:var(--verm)}
+.top{background:var(--verm);color:#fff;display:flex;align-items:center;gap:16px;padding:14px 24px;flex-wrap:wrap}
+.top .logo{background:#fff;color:var(--verm);font-weight:900;font-style:italic;font-size:22px;padding:4px 14px;border-radius:8px}
+.top h1{font-size:18px;margin:0}
+.top .quem{margin-left:auto;font-size:14px}.top a{color:#fff}
+nav.abas{background:#fff;display:flex;gap:4px;padding:8px 24px;overflow-x:auto;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+nav.abas a{padding:9px 16px;border-radius:9px;text-decoration:none;color:#333;font-weight:700;font-size:14px;white-space:nowrap}
+nav.abas a.on{background:var(--verm);color:#fff}
+main.c{max-width:1150px;margin:0 auto;padding:22px}
+h2{font-size:20px;margin:0 0 14px}h3{font-size:16px;margin:0 0 10px}
+.card{background:#fff;border-radius:14px;padding:20px;box-shadow:0 2px 10px rgba(0,0,0,.07);margin-bottom:20px}
+.card.h{border-top:6px solid var(--verm)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-bottom:20px}
+.cards .k{background:#fff;border-radius:14px;padding:16px;box-shadow:0 2px 10px rgba(0,0,0,.07);border-left:6px solid var(--verm)}
+.cards .k b{display:block;font-size:34px;color:var(--verm)}.cards .k span{font-size:13px;color:#555}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}@media(max-width:800px){.cols{grid-template-columns:1fr}}
+label{display:block;font-weight:700;margin:12px 0 5px;font-size:14px}
+input,select,textarea{width:100%;padding:10px;font:inherit;border:2px solid #d5d5d5;border-radius:9px;background:#fff}
+input[type=checkbox],input[type=radio]{width:auto}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--verm)}
+textarea{min-height:100px;resize:vertical}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 16px}
+@media(max-width:700px){.g2,.g3{grid-template-columns:1fr}}
+.chk{display:flex;gap:8px;align-items:center;font-weight:400;margin:6px 0}
+.chks{display:flex;flex-wrap:wrap;gap:6px 18px}
+.btn,button{background:var(--verm);color:#fff;border:0;border-radius:9px;padding:11px 20px;font:700 14px Arial;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.s,button.s{background:var(--preto)}.btn.c,button.c{background:#fff;color:var(--preto);border:2px solid #ccc}
+.btn.p,button.p{padding:6px 12px;font-size:13px}
+.acoes{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.dica{font-size:13px;color:#666;margin-top:4px}
+.ok{background:#e7f6ea;border-left:5px solid #1f9d3a;padding:12px;border-radius:8px;margin-bottom:16px}
+.er{background:#fde8ea;border-left:5px solid var(--verm);padding:12px;border-radius:8px;margin-bottom:16px}
+.aviso-tv{background:#fff7e0;border-left:5px solid #ffc400;padding:12px;border-radius:8px;font-size:14px;margin-top:14px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;background:var(--cinza);padding:9px;font-size:13px}
+td{padding:9px;border-top:1px solid #eee;vertical-align:top}
+.b{display:inline-block;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:700;background:#eee}
+.b-no_ar,.b-aprovado{background:#e7f6ea;color:#1f7a34}.b-em_revisao{background:#fff1c9;color:#8a6500}
+.b-rascunho{background:#eee;color:#555}.b-rejeitado{background:#fde8ea;color:var(--vermesc)}
+.b-agendado{background:#e3eefc;color:#1d5cb5}.b-expirado,.b-arquivado{background:#ddd;color:#555}.b-publicado{background:#e7f6ea;color:#1f7a34}
+.tvx{color:var(--verm);font-weight:700;font-size:12px}
+form.in{display:inline}
+.filtros{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr auto;gap:8px;align-items:end}
+@media(max-width:900px){.filtros{grid-template-columns:1fr 1fr}}
+.filtros label{margin:0 0 4px;font-size:12px}
+.hist{font-size:13px;color:#555;border-left:3px solid #ddd;padding-left:10px;margin:6px 0}
+.grade{width:100%}.grade td,.grade th{border:1px solid #e5e5e5;padding:8px}.grade th{background:var(--verm);color:#fff}
+.grade input{padding:7px;font-size:13px}
+.mes{background:var(--verm);color:#fff;padding:6px 12px;border-radius:8px;margin:18px 0 8px;font-weight:700}
+.lista-c{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.item{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.item .t{background:var(--verm);color:#fff;font-weight:700;font-size:13px;padding:8px 14px;display:flex;justify-content:space-between}
+.item .m{padding:14px}.item h3{margin:0 0 6px}.item p{margin:6px 0;font-size:14px;line-height:1.4}.item small{color:#666}
+
+/* ---------- utilitários (substituem estilos inline) ---------- */
+.mt0{margin-top:0}.mt10{margin-top:10px}.mt14{margin-top:14px}.mt16{margin-top:16px}
+.m0{margin:0}.mb12{margin:0 0 12px}.mb14{margin:0 0 14px}.mb22{margin-bottom:22px}
+.entre{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.fim{align-items:end}.ov-x{overflow-x:auto}.w30{width:30px}.w110{width:110px}.esq{text-align:left}
+.min60{min-height:60px}.min70{min-height:70px}.desab{opacity:.4;pointer-events:none}.oculto{display:none}
+.col-flex{display:flex;flex-direction:column}
+.f1{flex:1}.f15{flex:1.5}
+
+/* ---------- cardápio: tela e impressão em folha A4 ---------- */
+@page{size:A4 landscape;margin:12mm}
+.folha h1{font-size:26px;margin:0 0 4px}
+.folha .periodo{color:#555;margin-bottom:14px}
+.cardapio td,.cardapio th{vertical-align:top;font-size:15px;line-height:1.35}
+.cardapio td.ref{background:var(--cinza);font-weight:700;width:130px}
+.rodape{margin-top:14px;font-size:12px;color:#777}
+@media print{
+  .top,.noprint{display:none!important}
+  main.c{max-width:none;padding:0}
+  .card{box-shadow:none;border:0;padding:0}
+  .cardapio th{background:#E30613!important;color:#fff!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .cardapio td.ref{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .folha h1{color:#E30613}
+}

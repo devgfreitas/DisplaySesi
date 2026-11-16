@@ -1,0 +1,6 @@
+/vendor/
+/database/*.sqlite
+/storage/logs/*.log
+/public/uploads/*
+!/public/uploads/.gitkeep
+!/public/uploads/.htaccess
