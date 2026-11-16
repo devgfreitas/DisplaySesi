@@ -125,3 +125,6 @@ Consultas com PDO e parâmetros, senhas com `password_hash`, token CSRF em todo 
 - A escolha "Visitante" ou "Aluno ou responsável" na consulta é um filtro de tela, não um login. Para restringir de verdade, é preciso criar contas.
 - O relatório de visualizações conta apenas a área de consulta, não a TV.
 - Não há tema visual configurável para a TV.
+
+## colaboradores:
+    Rarika, Melissa, Giovany, Luisa V, José E, Vinicius e Caio Gonçalves;
